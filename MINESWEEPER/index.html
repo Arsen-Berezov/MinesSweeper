@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="onInit()">
+    <div class="box">
+      <button class="four" onclick="cellSize(this)">4X4</button>
+      <button class="eight" onclick="cellSize(this)">8X8</button>
+      <button class="twelve" onclick="cellSize(this)">12X12</button>
+      <div class="timer">TIME: <span>0.000</span></div>
+      <button class="safe" onclick="safeClick()">SAFE CLICK</button>
+      <table>
+        <tbody class="board"></tbody>
+      </table>
+      <button class="smiley" onclick="playAgain(this)">😀</button>
+      <div class="lives">LIVES: 3</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
